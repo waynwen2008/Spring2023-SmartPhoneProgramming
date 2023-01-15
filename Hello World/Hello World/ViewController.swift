@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     @IBAction func pressMeAction(_ sender: UIButton) {
         print("button was pressed")
-        buttonValue.text = "buttonValue changed!"
+        buttonValue.text = "Hello World!"
     }
 }
 
