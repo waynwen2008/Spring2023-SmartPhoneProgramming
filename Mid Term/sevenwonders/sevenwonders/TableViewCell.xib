@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="416" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="sevenwonders" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="634" height="416"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="634" height="416"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="4Gb-u9-ggH">
+                        <rect key="frame" x="0.0" y="116" width="634" height="290"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="290" id="H9O-Eq-sz3"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mw4-Gy-bCT">
+                        <rect key="frame" x="0.0" y="32" width="634" height="76"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4Gb-u9-ggH" secondAttribute="bottom" id="IPy-dN-BcZ"/>
+                    <constraint firstItem="4Gb-u9-ggH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Lxm-8a-QMm"/>
+                    <constraint firstItem="4Gb-u9-ggH" firstAttribute="top" secondItem="mw4-Gy-bCT" secondAttribute="bottom" constant="20" id="M4V-eZ-D7K"/>
+                    <constraint firstAttribute="trailing" secondItem="mw4-Gy-bCT" secondAttribute="trailing" id="UKG-ie-Oth"/>
+                    <constraint firstItem="mw4-Gy-bCT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="W6V-q0-bxv"/>
+                    <constraint firstItem="mw4-Gy-bCT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ifS-da-YDm"/>
+                    <constraint firstAttribute="bottom" secondItem="4Gb-u9-ggH" secondAttribute="bottom" constant="10" id="vlw-UV-yaa"/>
+                    <constraint firstItem="4Gb-u9-ggH" firstAttribute="top" secondItem="mw4-Gy-bCT" secondAttribute="bottom" constant="10" id="wJp-RO-AYT"/>
+                    <constraint firstAttribute="trailing" secondItem="4Gb-u9-ggH" secondAttribute="trailing" id="xbb-aB-3om"/>
+                    <constraint firstItem="4Gb-u9-ggH" firstAttribute="top" secondItem="mw4-Gy-bCT" secondAttribute="bottom" constant="10" id="yiB-sI-SfM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="sevenWonderImg" destination="4Gb-u9-ggH" id="Dxk-a2-CJW"/>
+                <outlet property="titleText" destination="mw4-Gy-bCT" id="vCz-Zv-r45"/>
+            </connections>
+            <point key="canvasLocation" x="316" y="72"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="0" width="1200" height="762"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_APiCall {
+  umbrella header "Pods-APiCall-umbrella.h"
+
+  export *
+  module * { export * }
+}
